@@ -379,7 +379,7 @@
       }
     }
   ],
-  "refresh": "5s",
+  "refresh": "1m",
   "schemaVersion": 27,
   "style": "dark",
   "tags": [],
@@ -394,5 +394,5 @@
   "timezone": "",
   "title": "Ping",
   "uid": "kyVyHPZgz",
-  "version": 7
+  "version": 8
 }

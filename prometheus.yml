@@ -1,5 +1,7 @@
 scrape_configs:
   - job_name: 'publicdnsping'
+    scrape_interval: 1m
+    scrape_timeout: 5s
     metrics_path: /probe
     params:
       module: [icmp]  # Look for a HTTP 200 response.
@@ -24,6 +26,8 @@ scrape_configs:
         replacement: 127.0.0.1:9115  # The blackbox exporter's real hostname:port.
 
   - job_name: 'rootdnspingv4'
+    scrape_interval: 1m
+    scrape_timeout: 5s
     metrics_path: /probe
     params:
       module: [icmpv4]  # Look for a HTTP 200 response.
@@ -51,6 +55,8 @@ scrape_configs:
         replacement: 127.0.0.1:9115  # The blackbox exporter's real hostname:port.
 
   - job_name: 'rootdnspingv6'
+    scrape_interval: 1m
+    scrape_timeout: 5s
     metrics_path: /probe
     params:
       module: [icmpv6]  # Look for a HTTP 200 response.
